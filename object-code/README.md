@@ -17,7 +17,7 @@ Pour configurer l'Arduino comme convenue, il faut se rendre dans l'onglet "Croqu
 
 Ensuite ajouter les **deux** librairies suivantes
 
-First Header | Second Header
+Adafruit_CC3000 | Adafruit_VL6180X
 ------------ | -------------
 ![Arduino2](/images/arduino2.png) | ![Arduino3](/images/arduino3.png)
 
