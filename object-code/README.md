@@ -2,7 +2,7 @@
 
 Configuration d'un arduino MEGA 2560 avec un Click SHIELD.
 
-# Prés-requis
+## Prés-requis
 
 ### 1. Installation Arduino IDE
 
@@ -10,3 +10,4 @@ Rendez-vous sur le site officiel d'Arduino : https://www.arduino.cc/en/Main/Soft
 Il est aussi possible d'utiliser le Web Editor pour configurer l'Arduino
 
 ### 2. Ajout des librairies Adafruit
+
