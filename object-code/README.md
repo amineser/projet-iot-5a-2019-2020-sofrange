@@ -15,4 +15,15 @@ Pour configurer l'Arduino comme convenue, il faut se rendre dans l'onglet "Croqu
 
 ![Arduino1](/images/arduino1.png)
 
+Ensuite ajouter les **deux** librairies suivantes
+
+First Header | Second Header
+------------ | -------------
+![Arduino2](/images/arduino2.png) | ![Arduino3](/images/arduino3.png)
+
+
+
+
+
+
 
