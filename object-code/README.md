@@ -11,3 +11,6 @@ Il est aussi possible d'utiliser le Web Editor pour configurer l'Arduino
 
 ### 2. Ajout des librairies Adafruit
 
+![GitHub Logo](/images/arduino1.png)
+Format: ![Alt Text](url)
+
