@@ -21,6 +21,8 @@ Adafruit_CC3000 | Adafruit_VL6180X
 ------------ | -------------
 ![Arduino2](/images/arduino2.png) | ![Arduino3](/images/arduino3.png)
 
+**NOTE :** les librairies utilisés durant le projet sont disponibles dans ce repertoire [Adafruit_CC3000_Library.zip]
+
 **ATTENTION :** Ne pas oublier d'inclure les librairies en allant dans l'onglet "Croquis" puis "Inclure une bibliothèque" et cliquant sur les deux librairies. (le redémarrage de Arduino IDE peut être nécessaire)
 
 ## Configuration matériel
