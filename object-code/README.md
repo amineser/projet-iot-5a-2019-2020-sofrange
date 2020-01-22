@@ -6,16 +6,16 @@ Configuration d'un arduino MEGA 2560 avec un Click SHIELD.
 
 ### 1. Installation Arduino IDE
 
-Rendez-vous sur le site officiel d'Arduino : https://www.arduino.cc/en/Main/Software est intaller la dernière version de l'IDE disponible.
+Rendez-vous sur le site officiel d'Arduino : https://www.arduino.cc/en/Main/Software est installer la dernière version de l'IDE disponible.
 Il est aussi possible d'utiliser le Web Editor pour configurer l'Arduino
 
 ### 2. Ajout des librairies Adafruit
 
-Pour configurer l'Arduino comme convenue, il faut se rendre dans l'onglet "Croquis" puis "Inclure une bibliothèque" et "Gerer les bibliothèques" comme ci-dessous :
+Pour configurer l'Arduino comme convenu, il faut se rendre dans l'onglet "Croquis" puis "Inclure une bibliothèque" et "Gerer les bibliothèques" comme ci-dessous :
 
 ![Arduino1](/images/arduino1.png)
 
-Ensuite ajouter les **deux** librairies suivantes
+Ensuite, ajouter les **deux** librairies suivantes
 
 Adafruit_CC3000 | Adafruit_VL6180X
 ------------ | -------------
@@ -35,7 +35,7 @@ Pour ce projet nous utilisons l'Arduino MEGA accompagné par un click Shield com
 
 ### Click utilisés pour le projet
 
-Les clicks associé sont les suivants :
+Les clicks associés sont les suivants :
 
 * SLOT 1 : MOTION CLICK 
 * SLOT 2 : LIGHT RANGER CLICK
@@ -43,11 +43,11 @@ Les clicks associé sont les suivants :
 
 ![ArduinoCLICK](/images/ClickPosition.png)
 
-**NOTE :** Il est possible d'interchanger les click Light Ranger et Motion ansi que le CC3000 et le Light Ranger en ajustant les pin de configuration.
+**NOTE :** Il est possible d'interchanger les clicks Light Ranger et Motion ainsi que le CC3000 et le Light Ranger en ajustant les pins de configuration.
 
-**ATTENTION :** Il est impossible de placer le CC3000 sur le slot 1 du SHIELD car le pin d'interruption associer au slot 1 (PE3/PWM) correspondant au pin 5 de l'arduino est inutilisable en interruption selon la doc officiel d'Arduino : https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
+**ATTENTION :** Il est impossible de placer le CC3000 sur le slot 1 du SHIELD, car le pin d'interruption associée au slot 1 (PE3/PWM) correspondant au pin 5 de l'arduino est inutilisable en interruption selon la doc officielle d'Arduino : https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
 
-
+ 
 
 
 
