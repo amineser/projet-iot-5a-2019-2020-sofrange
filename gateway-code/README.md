@@ -23,7 +23,7 @@ iface eth0 inet static
     address 192.168.11.2
     netmask 255.255.255.252
     network 192.168.11.0
-    gateway 192.168.11.1
+    gateway 192.168.11.1 
     
  Redémarrer le service réseau pour valider toutes ces modifications. "/etc/init.d/networking restart"
 
