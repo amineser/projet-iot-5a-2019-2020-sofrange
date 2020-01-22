@@ -35,11 +35,16 @@ Pour ce projet nous utilisons l'Arduino MEGA accompagné par un click Shield com
 
 Les clicks associé sont les suivants :
 
-Adafruit_CC3000 | Adafruit_VL6180X
------------- | -------------
 * SLOT 1 : MOTION CLICK 
 * SLOT 2 : LIGHT RANGER CLICK
-* SLOT 3 : CC3000 CLICK | TEST
+* SLOT 3 : CC3000 CLICK 
+
+![ArduinoCLICK](/images/ClickPosition.png)
+
+**NOTE :** Il est possible d'interchanger les click Light Ranger et Motion ansi que le CC3000 et le Light Ranger en ajustant les pin de configuration.
+
+**ATTENTION :** Il est impossible de placer le CC3000 sur le slot 1 du SHIELD car le pin d'interruption associer au slot 1 (PE3/PWM) correspondant au pin 5 de l'arduino est inutilisable en interruption selon la doc officiel d'Arduino : https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
+
 
 
 
