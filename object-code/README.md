@@ -27,7 +27,20 @@ Adafruit_CC3000 | Adafruit_VL6180X
 
 ### Utilisation du click shield pour Arduino
 
+Pour ce projet nous utilisons l'Arduino MEGA accompagné par un click Shield comme ci-dessous :
+
+![ArduinoMega](/images/arduinoMega.png)
+
 ### Click utilisés pour le projet
+
+Les clicks associé sont les suivants :
+
+Adafruit_CC3000 | Adafruit_VL6180X
+------------ | -------------
+* SLOT 1 : MOTION CLICK 
+* SLOT 2 : LIGHT RANGER CLICK
+* SLOT 3 : CC3000 CLICK | TEST
+
 
 
 
