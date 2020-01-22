@@ -16,7 +16,7 @@
 
 #Modifier le fichier /etc/resolv.conf pour la configuration DNS. rajouter la ligne "nameserver @serverDNS"
 
-# dans  /etc/network/interfaces il faut configurer l'interface eth0 qui permettra le partage de connexion. 
+#dans  /etc/network/interfaces il faut configurer l'interface eth0 qui permettra le partage de connexion. 
 
 auto eth0
 iface eth0 inet static
@@ -39,7 +39,7 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
  
  la commande sysctl -w net.ipv4.ip_forward=1 permet d'activer le forwading. (on peut vérifier avec sysctl -a | grep forward)
  
- # Régles IPTABLES : 
+ #Régles IPTABLES : 
   iptables -- table nat -- append POSTROUTING -o eth0 -j MASQUERADE  (pour l'output)
    iptables -- append FORWARD -i eth1 -j ACCEPT (pour l'input)
 
