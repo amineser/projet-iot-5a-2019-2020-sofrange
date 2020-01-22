@@ -17,6 +17,7 @@
 #Modifier le fichier /etc/resolv.conf pour la configuration DNS. rajouter la ligne "nameserver @serverDNS"
 
 # dans  /etc/network/interfaces il faut configurer l'interface eth0 qui permettra le partage de connexion. 
+
 auto eth0
 iface eth0 inet static
     address 192.168.11.2
@@ -24,7 +25,7 @@ iface eth0 inet static
     network 192.168.11.0
     gateway 192.168.11.1
     
-# Redémarrer le service réseau pour valider toutes ces modifications. "/etc/init.d/networking restart"
+ Redémarrer le service réseau pour valider toutes ces modifications. "/etc/init.d/networking restart"
 
 #La table de routage du BBB devrait ressembler à ceci:
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
@@ -35,11 +36,14 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 #Configurer ensuite l'interface eth1 de la machine virtuelle qui est connecté en accès par pont sur VM0 en lui assignant l'adresse 192.168.11.1 qui correspond à la gateway dans eth0 du beaglebone. La carte eth0 de la Machine virtuelle est configurée en NAT et a accès à Internet. C'est ce qui nous permettrait d'accéder à Internet. 
 
 #Pour que la machine virtuelle puisse rediriger les paquets du BBB vers internet il faut y activer le forwarding et configurer des règles IPTABLES.
- # la commande sysctl -w net.ipv4.ip_forward=1 permet d'activer le forwading. (on peut vérifier avec sysctl -a | grep forward)
+ 
+ la commande sysctl -w net.ipv4.ip_forward=1 permet d'activer le forwading. (on peut vérifier avec sysctl -a | grep forward)
+ 
  # Régles IPTABLES : 
-  # iptables -- table nat -- append POSTROUTING -o eth0 -j MASQUERADE  (pour l'output)
-  # iptables -- append FORWARD -i eth1 -j ACCEPT (pour l'input)
-  
+  iptables -- table nat -- append POSTROUTING -o eth0 -j MASQUERADE  (pour l'output)
+   iptables -- append FORWARD -i eth1 -j ACCEPT (pour l'input)
+
+
 
 
 
