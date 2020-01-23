@@ -56,7 +56,7 @@ Veuilliez prendre note que le CC3000 positionné sur le SHIELD doit nécessairem
 
 La raison est que les pins d'interruption de l'arduino sont mappés sur les pins PEX/PWM et non pas les pins INT et que le pin EN doit etre mappé sur le pin RST.
 
-![ArduinoCLICK](/images/CC3000.png)
+![ArduinoCLICK](/images/CC3000.png | width=50)
 
 ## Code
 
@@ -65,4 +65,4 @@ La raison est que les pins d'interruption de l'arduino sont mappés sur les pins
 *Compiler
 *Téléverser
 
-**ENJOY ;) **
+**ENJOY ;)**
