@@ -48,6 +48,10 @@ Les clicks associés sont les suivants :
 **ATTENTION :** Il est impossible de placer le CC3000 sur le slot 1 du SHIELD, car le pin d'interruption associée au slot 1 (PE3/PWM) correspondant au pin 5 de l'arduino est inutilisable en interruption selon la doc officielle d'Arduino : https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/
 
  
+### Particularité du CC3000 Click
 
+Veuilliez prendre note que le CC3000 positionné sur le SHIELD doit nécessairement avoir une soudure entre la pâte IRQ et la pâte NC en haut à droite du CLICK.
 
+La raison est que les pins d'interruption de l'arduino sont mappés sur les pins PEX/PWM et non pas les pins INT.
 
+![ArduinoCLICK](/images/CC3000.png)
