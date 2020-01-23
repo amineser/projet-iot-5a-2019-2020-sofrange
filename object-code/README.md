@@ -56,14 +56,14 @@ Veuilliez prendre note que le CC3000 positionné sur le SHIELD doit nécessairem
 
 La raison est que les pins d'interruption de l'arduino sont mappés sur les pins PEX/PWM et non pas les pins INT et que le pin EN doit etre mappé sur le pin RST.
 
-![ArduinoCLICK](/images/CC3000.png){:height="50%" width="50%"}
+![ArduinoCLICK](/images/CC3000.png&s=200)
 
 ## Code
 
 Pour Finir :
-*Utiliser le fichier "FinaleCode.ino" dans ce répertoire
-*Ouvrer le avec Arduino IDE
-*Compiler
-*Téléverser
+-Utiliser le fichier "FinaleCode.ino" dans ce répertoire
+-Ouvrer le avec Arduino IDE
+-Compiler
+-Téléverser
 
 **ENJOY ;)**
