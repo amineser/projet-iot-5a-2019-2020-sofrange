@@ -50,8 +50,10 @@ Les clicks associés sont les suivants :
  
 ### Particularité du CC3000 Click
 
-Veuilliez prendre note que le CC3000 positionné sur le SHIELD doit nécessairement avoir une soudure entre la pâte IRQ et la pâte NC en haut à droite du CLICK.
+Veuilliez prendre note que le CC3000 positionné sur le SHIELD doit nécessairement avoir une soudure: 
+*entre la pâte IRQ et la pâte NC en haut à Droite du CLICK
+*entre la pâte EN et la pâte NC en haut à Gauche du CLICK
 
-La raison est que les pins d'interruption de l'arduino sont mappés sur les pins PEX/PWM et non pas les pins INT.
+La raison est que les pins d'interruption de l'arduino sont mappés sur les pins PEX/PWM et non pas les pins INT et que le pin EN doit etre mappé sur le pin RST.
 
 ![ArduinoCLICK](/images/CC3000.png)
